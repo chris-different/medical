@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动医疗挂号平台</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="../css/mobile.css" type="text/css" charset="UTF-8" />
+    <link rel="stylesheet" href="../static/css/mobile.css" type="text/css" charset="UTF-8" />
+
+
+
+
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../static/dist/css/swiper.min.css">
+    
+    <script src="../dist/js/swiper.min.js"></script>
+    <script src="../static/dist/js/swiper.min.js"></script>
+    
+    <script src="../jquery/jquery-1.11.3.min.js"></script>
+    <script src="../static/jquery/jquery-1.11.3.min.js"></script>
+    
+    <!-- <script src="../static/layer/layer.js"></script>
+    <script src="../layer/layer.js"></script> -->
+
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+</script>
+
+<script src="../static/js/main.js"></script>
+<script src="../js/main.js"></script>
+
+<script src="../static/layer_mobile/layer.js"></script>
+<script src="../layer_mobile/layer.js"></script>
+
+<script src="../static/js/Router.js"></script>
+<script src="../js/Router.js"></script>
+
+
+
+
+</head>
+<body>
+    <input class="unique" id="${user.id}" type="hidden">
+    <input class="unique_name" id="${user.username}" type="hidden">
+        <!-- 首页 -->
+<div class="main">
+
+
+    <div class="navbar">
+        <div class="nav_title">在线挂号平台</div>
+
+        <div class="nav_button">
+            <!-- <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul> -->
+        </div>
+    </div>
+
+    <!-- <div class="search_bar">
+      <form action="/">
+          <input  type="text" name="uname" placeholder="医院/科室">
+          <div class="search_icon"></div>    
+       </form>
+    </div> -->
+
+
+    <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide lunbo1"></div>
+                <div class="swiper-slide lunbo2"></div>
+                <div class="swiper-slide lunbo3"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+            
+            <!-- 如果需要导航按钮 -->
+            <!-- <div class="swiper-button-prev"></div> -->
+            <!-- <div class="swiper-button-next"></div> -->
+            
+            <!-- 如果需要滚动条 -->
+            <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+
+
+    <div class="little_side_bar">
+    </div>
+    <div class="content_bar">
+        <div class="doctor_title">推荐医生</div>
+        <div class="little_side_bar"></div>
+        <div class="doctor_department clearfix">
+            <ul>
+                <li>心血管内科</li>
+                <li>神经内科</li>
+                <li>消化内科</li>
+            </ul>
+        </div>
+        
+    </div>
+
+
+    <!-- <div class="side_bar"></div>
+    <div class="content_bar">
+            <div class="doctor_list">
+                    <div class="doctor clearfix">
+                        <div class="doctor_img"></div>
+                        <div class="doctor_content">
+                            <ul>
+                                <li id="doctor_name">name</li>
+                                <li id="doctor_department">department</li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="doctor"></div>
+                    <div class="doctor"></div>
+            </div>
+    </div> -->
+
+    
+<div class="all_doctor_content">
+    
+</div>
+
+
+
+    
+</div>
+
+
+
+<!-- 论坛 -->
+<div class="forum">
+    
+    <div class="question_search">
+        <form action="">
+            <div class="ques_bar_1">
+                <div class="question_search_icon"></div>
+            </div>
+            <div class="ques_bar_2">
+               <input type="text" placeholder="请输入你的问题">
+            </div>
+            <div class="ques_bar_3">
+                <button id="ask" type="button">提问</button>
+            </div>
+        </form>
+        
+    </div>
+
+    <div class="choose_question">
+        <button id="xintie" class="fbox float" type="button">新帖</button>
+        <button id="jingpin" class="sbox float" type="button">精品推荐</button>
+
+    </div>
+<div id="questions" class="questions">
+
+    <!-- <div class="question_object">
+        <a href="#">
+                <div class="question_title">最近因为吃饭不按时，有一天晚上就吃……。</div>
+                <div class="answer_summary">您好，谢谢您的支持，详细看了您的描述和症状，胃部不适伴有反酸，既往胃炎的病史。
+                    第一，药物上口服奥美拉唑联合铝碳酸镁嚼服治疗。
+                </div>
+                <div class="question_bottom">
+                    <div class="like">赞同 1</div>
+                </div>
+        </a>
+        
+    </div> -->
+    <!-- <div class="question_object">
+        <div class="question_title">1</div>
+        <div class="answer_summary">2</div>
+        <div class="question_bottom">
+            <div class="like"></div>
+        </div>
+    </div>
+    <div class="question_object">
+        <div class="question_title">1</div>
+        <div class="answer_summary">2</div>
+        <div class="question_bottom">
+            <div class="like"></div>
+        </div>
+    </div> -->
+    
+</div>
+
+</div>  
+<!-- 问题详情页 -->
+<div class="detail">
+    <div class="detail_header">
+        <div class="back_button"></div>
+    </div>
+    <!-- <div>question.id:$!{question.id}</div> -->
+    <div class="detail_question_title">$!{question.title}</div>
+    <div class="detail_question_content">$!{question.content}</div>
+    <div class="detail_question_footbar clearfix">
+        <div class="detail_question_createdDate">$!{question.createdDate}</div>
+        <div class="detail_comment_count">$!{question.commentCount}</div>
+    </div>
+    <input id="q_id" value="" type="hidden">
+    <!-- <div>question.userId:$!{question.userId}</div> -->
+    <div class="detail_comment">精选评论:
+        <div class="detail_write_comment">写留言</div>
+    </div>
+
+     
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 科室 -->
+<div class="depart">
+    <div class="top_bar">科室总类</div>
+    <!-- <div class="left_bar">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="right_bar">1</div> -->
+    <div class="depart_content">
+        <!-- <div class="depart_title">科室</div>
+        <div class="depart_content_bar">
+            <ul class="clearfix"> 
+                <li>women</li>
+                <li>dfs</li>
+                <li>sdfsdf</li>
+                <li>dddd</li>
+                <li>dddd</li>
+            </ul>
+        </div> -->
+    </div>
+    
+
+</div>
+
+<!-- 挂号 -->
+<div class="register">
+    <div class="time_table clearfix">
+        <div class="l_table">
+            <div class="left_button"></div>
+            <ul>
+                <li>上午</li>
+                <li>下午</li>
+                <li>晚上</li>
+            </ul>
+        </div>
+        <div class="m_table">
+            <!-- <div class="weekday">
+                <div class="weekday_title">星期一</div>
+                <ul>
+                    <li>19</li>
+                    <li>19</li>
+                    <li>19</li>
+                </ul>
+            </div> -->
+            
+            <!-- <div class="Monday"></div>
+            <div class="Tuesday"></div>
+            <div class="Wednesday"></div>
+            <div class="Thursday"></div>
+            <div class="Friday"></div>
+            <div class="Saturday"></div>
+            <div class="Sunday"></div> -->
+        </div>
+        <div class="r_table">
+                <div class="right_button"></div>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="register_doctor_list">
+        <!-- <div class="register_doctor_list_bar clearfix">
+            <div class="register_doctor_list_bar_one"></div>
+            <div class="register_doctor_list_bar_two">
+
+            </div>
+            <div class="register_doctor_list_bar_three">
+                <span>医师服务费</span>
+                <span>剩余号</span>
+            </div>
+            <div class="register_doctor_list_bar_four">
+                <a href="#final_register">预约挂号</a>
+            </div>
+        </div> -->
+    </div>
+
+    <div class="doctor_guidance">
+        <div class="guidance_one">
+            <div class="guidance_title">
+                预约规则
+            </div>
+            <ul>
+                <li>
+                    <span>更新时间：</span>每日07:00更新
+                </li>
+                <li>
+                    <span>预约周期：</span>7天
+                </li>
+                <li>
+                    <span>停挂时间：</span>12:00:00
+                </li>
+                <li><span>退号时间：</span>就诊前一工作日12:00前取消</li>
+            </ul>
+        </div>
+        <div class="guidance_two">
+            <div class="guidance_title">
+                特殊规则
+            </div>
+            <p>
+                    ①&nbsp; 无就医卡的患者取号前须先到我院门诊发卡中心办理我院就医卡，医保患者须在办卡的同时提供社保卡进行关联；
+                    ②&nbsp; 目前【生殖医学中心】只预约女性患者；【男科】只预约男性患者；
+                    ③&nbsp; 我院的预约取号地点有多个，请按照预约成功短信提示或者预约须知里注明的地点取号就诊；周末本部号源取号地点为门诊楼一层。
+                    <p>④ 16周岁以下患者(含16周岁)只能预约口腔科门诊-正畸专业及儿科门诊、耳鼻喉科门诊、眼科门诊、成形科门诊、皮肤科门诊相关专业号源；</p>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+<!-- 未登录的登陆页面 -->
+<!-- <div class="login">
+    <div class="login_title">
+        
+    </div>
+    <div class="login_window">
+        <div class="login_window_title">登录</div>
+        <form action="">
+            <span>用户名/邮箱/手机号</span>
+            <input class="uinput" type="text" placeholder="用户名/邮箱/手机号">
+            <span>密码：</span>
+            <input class="uinput" type="password" placeholder="密码">
+            <div class="check_box clearfix">
+                <input type="checkbox">
+                <span>记住我</span>
+            </div>
+            <button type="button" class="log_button">立即登录</button>
+            <div class="forget">
+                <span>
+                    忘记密码?
+                </span>
+            </div>    
+        </form>
+    </div>
+    <div class="login_route">
+        <span>
+            没有账号？
+        </span>
+        <span>
+            <u class="register_route">马上注册</u>
+        </span>
+    </div>
+</div>
+<div class="reg">
+        <div class="login_title">
+            
+        </div>
+        <div class="login_window">
+            <div class="login_window_title">注册</div>
+            <form action="">
+                <span>用户名/邮箱/手机号</span>
+                <input class="uinput" type="text" placeholder="用户名/邮箱/手机号">
+                <span>密码：</span>
+                <input id="passwd" class="uinput" type="password" placeholder="密码">
+                <span>确认密码：</span>
+                <input id="dbpasswd" class="uinput" type="password" placeholder="密码">
+                
+                <button type="button" class="reg_button">立即注册</button> 
+            </form>
+        </div>
+        <div class="login_route">
+            <span>
+                有账号
+            </span>
+            <span>
+                <u class="log_route">去登录</u>
+            </span>
+        </div>
+</div> -->
+
+<!-- 个人中心 -->
+<div class="mine">
+    <div class="mine_header">
+        <div class="header_image">
+            <img src="" alt="">
+        </div>
+        <div class="header_name"></div>
+    </div>
+    <div class="mine_header_after"></div>
+    <div class="button_collection">
+        <div class="mine_side_bar">我的预约：</div>
+        <div class="mine_1">
+                
+
+        </div>
+        
+        <div class="mine_side_bar">您的爽约记录：</div>
+        <div class="mine_2">
+
+
+        </div>
+
+        <div class="mine_side_bar">历史记录</div>
+
+        <div class="mine_side_bar">设置</div>
+
+    </div>
+</div>
+
+
+
+
+<div class="blank">
+    <div class="blank_content">
+            我是白板
+    </div>
+    
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+    <div class="footer_icon footer_icon_1"></div>
+    <div class="footer_icon footer_icon_2"></div>
+    <div class="footer_icon footer_icon_3"></div>
+    <div class="footer_icon footer_icon_4"></div>   
+</div>
+
+    
+    <script>        
+            var mySwiper = new Swiper ('.swiper-container', {
+              direction: 'horizontal', // 垂直切换选项
+            //   loop: true, // 循环模式选项
+              autoplay:{
+                delay:2000,
+                disableOnInteraction: false,
+              },
+              observeParents:true,
+              observer:true,
+              // 如果需要分页器
+              pagination: {
+                el: '.swiper-pagination',
+              },
+              
+              // 如果需要前进后退按钮
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+              
+              // 如果需要滚动条
+            //   scrollbar: {
+            //     el: '.swiper-scrollbar',
+            //   },
+            })        
+    </script>
+</body>
+</html>
+
+<!-- 360*640 -->

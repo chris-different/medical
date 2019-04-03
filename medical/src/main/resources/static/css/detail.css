@@ -1,0 +1,176 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+ul,li {
+    list-style:none;
+    
+}
+a {
+    text-decoration: none;
+}
+.clearfix:after {
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+}
+.detail {
+    width: 7.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.detail_header {
+    width: 7.5rem;
+    height: 0.8rem;
+    background-color: #03abff;
+}
+.back_button {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image:url(../img/back_button.png);
+    background-repeat:no repeat;
+    background-position: center;
+    background-size: cover;
+}
+.question_title {
+    font-size: 25px;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    width: 3rem;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.question_content {
+    width: 6.5rem;
+    margin: 0 auto;
+    font-size: 20px;
+}
+.question_footbar {
+    width: 6.5rem;
+    margin: 0 auto;
+}
+.question_createdDate {
+    float: left;
+    font-size: 10px;
+}
+.comment_count {
+    float: right;
+    font-size: 10px;
+}
+
+
+.comment {
+    font-size: 20px;
+    font-weight: 900;
+    height: 1rem;
+    line-height: 1rem;
+    width: 6.5rem;
+    margin: 0.2rem auto;
+}
+
+.write_comment {
+    font-size: 15px;
+    float: right;
+    height: 1rem;
+    line-height: 1rem;
+    width: 2rem;
+
+}
+
+
+.com {
+    width: 6.5rem;
+    margin: 0.2rem auto;
+}
+.user_img {
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    background-image:url(../img/user_img.jpg);
+    background-repeat:no repeat;
+    background-position: center;
+    background-size: cover;
+}
+.user_box {
+    width: 4.7rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+.user_name {
+    font-size: 20px;
+}
+.like {
+    background-image:url(../img/like.jpg);
+    background-repeat:no repeat;
+    background-position: center;
+    background-size: cover;
+    height: 0.5rem;
+    width: 0.5rem;
+    float: right;
+}
+.user_content {
+    margin-top: 0.2rem;
+    font-size: 18px;
+    width: 5rem;
+}
+
+
+
+
+
+
+
+
+/* 固定底栏 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 1.5rem;
+    width: 7.5rem;
+    background-color: #fff;
+    border-top:1px solid #d5d7dc;
+    z-index: 999;
+}
+
+.footer_icon {
+    width: 1.375rem;
+    height: 1.375rem;
+    margin:0.06rem 0.25rem;
+    float: left;
+    background-position: center;
+    background-size: cover;
+}
+.footer_icon_1 {
+    background-image: url(../img/footer_icon_1.jpg);  
+}
+.footer_icon_1_blue {
+    background-image: url(../img/footer_icon_1_blue.jpg);
+}
+.footer_icon_2 {
+    background-image: url(../img/footer_icon_2.jpg);
+}
+.footer_icon_2_blue {
+    background-image: url(../img/footer_icon_2_blue.jpg);
+}
+.footer_icon_3 {
+    background-image: url(../img/footer_icon_3.jpg);
+}
+.footer_icon_3_blue {
+    background-image: url(../img/footer_icon_3_blue.jpg);
+}
+.footer_icon_4 {
+    background-image: url(../img/footer_icon_4.jpg);
+}
+.footer_icon_4_blue {
+    background-image: url(../img/footer_icon_4_blue.jpg);
+}
+

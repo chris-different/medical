@@ -1,0 +1,1290 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+div {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style:none;
+    
+}
+a {
+    text-decoration: none;
+}
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+}
+.clearfix:after {
+    content: '';
+    height: 0;
+    display: block;
+    clear: both;
+}
+
+/* 首页 */
+.navbar {
+    width: 7.5rem;
+    height: 1.28rem;
+    background-color:#03abff;
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: relative;
+    border-bottom: 0.001rem solid #35bcff;
+}
+
+.nav_title {
+    width: 3rem;
+    margin-left: 2.5rem;
+    line-height: 1.28rem;
+    padding: 0;
+    color: #fff;
+    font-size: 25px; 
+    float: left;
+}
+
+.nav_button {
+    width: 1.6rem;
+    height: 1rem;
+    margin-top: 0.2rem;
+    background-image:url(../img/nav_button_2.png);
+    background-position: center;
+    background-size: cover;
+    float: right;
+}
+
+.search_bar {
+    width: 7.5rem;
+    height: 1.27rem;
+    background-color: #03abff;
+}
+.search_bar form {
+    height: 1.27rem;
+}
+.search_bar input {
+    width: 4.5rem;
+    border: 1px solid #324B4E;
+    background-color: #35bcff;
+    transition: .3s linear;
+    float: left;
+    height: 0.5rem;
+    margin-left: 1rem;
+    margin-top: 0.3rem;
+}
+.search_bar input:focus {
+    width: 5.5rem;
+}
+
+
+.search_icon {
+    float: left;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 100%;
+    border:1px solid black;
+    position: relative;
+    margin:0.35rem 0.15rem;
+}
+.search_icon:after {
+    content: "";
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width:0.25rem;
+    height: 0.02rem;
+    position: absolute;
+    top:0.3rem;
+    left:0.2rem;
+    background-color: currentcolor;
+}
+   
+
+
+.form {
+    z-index: 2;
+    display: block;
+}
+
+/* swiper轮播图插件 */
+.swiper-container {
+    width: 7.5rem;
+    height: 3.25rem;
+    margin: 0;
+    padding: 0;
+}
+.swiper-slide{
+    background-color: #03abff;
+}
+
+.lunbo1 {
+    background-image: url(../img/lunbo_1.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+.lunbo2 {
+    background-image: url(../img/lunbo_2.jpg);
+    background-position: center;
+    background-size: cover
+}
+
+.lunbo3 {
+    background-image: url(../img/lunbo_3.jpg);
+    background-position: center;
+    background-size: cover
+}
+.side_bar {
+    background-color: #f5f5f5;
+    width: 7.5rem;
+    height: 0.5rem;
+}
+.little_side_bar {
+    background-color: #f5f5f5;
+    width: 7.5rem;
+    height: 0.1rem;
+}
+
+.content_bar {
+    background-color: #fff;
+    width: 7.5rem;
+}
+
+.main {
+    width: 7.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+.doctor_title {
+    font-size: 20px;
+}
+.doctor_department ul {
+    margin: 0;
+    padding: 0;
+}
+.doctor_department li {
+    float: left;
+    font-size: 16px;
+    /* width: 0.8rem; */
+    margin-right: 0.8rem;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    text-align: center;
+    
+}
+.doctor-header-item {
+    display: inline-block;
+    height: calc(100% - 4px);
+    margin-top: 2px;
+    border-bottom: 2px solid transparent;
+    color: #99a0aa;
+    cursor: pointer;
+}
+.doctor-header-item-active {
+    display: inline-block;
+    height: calc(100% - 4px);
+    margin-top: 2px;
+    border-bottom: 2px solid #28b7a3;
+    color: #28b7a3;
+    cursor: pointer;
+}
+.doctor_content {
+    float: left;
+    padding-left: 0.2rem; 
+}
+.doctor_img {
+    float: left;
+    width: 0.8rem;
+    /* margin-top: 0.2rem; */
+    background-image: url(../img/female_doctor.png);
+    background-position: center;
+    background-size: cover;
+    width: 1rem;
+    height: 1rem;
+}
+#doctor_name {
+    font-size: 14px;
+}
+#doctor_department {
+    font-size: 14px;
+}
+#doctor_bg {
+    font-size: 14px;
+
+}
+.doctor_content ul{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 问答讨论 */
+.forum {
+    width: 7.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #eef5fe;
+}
+
+
+.question_search {
+    width: 6.5rem;
+    padding-bottom: 0.2rem;
+    height: 1.3rem;
+    position: relative;
+    top: 0.5rem;
+    left: 1rem;
+}
+.question_search input {
+    display: block;
+    height: 0.5rem;
+    width: 4rem;
+    border: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.question_search button {
+    display: block;
+    height: 0.59rem;
+    width: 1.5rem;
+    background-color: #fff;
+    border-left: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+
+}
+.ques_bar_1 {
+    margin-top: 0.3rem;
+    border-left: 0;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+
+    float: left;
+    height: 0.54rem; 
+}
+.ques_bar_2 {
+    padding-top: 0.3rem;
+    float: left;
+    height: 0.8rem;
+}
+.ques_bar_3 {
+    float: left;
+    height: 0.8rem;
+    padding-top: 0.3rem;
+
+}
+.question_search_icon {
+    float: left;
+    width: 0.25rem;
+    height: 0.25rem;
+    border-radius: 100%;
+    border:1px solid black;
+    position: relative;
+    margin:0.1rem 0.15rem;
+}
+.question_search_icon:after {
+    content: "";
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width:0.25rem;
+    height: 0.02rem;
+    position: absolute;
+    top:0.3rem;
+    left:0.2rem;
+    background-color: currentcolor;
+}
+
+
+.choose_question {
+    width: 7.4rem;
+    height: 0.8rem;
+    border-bottom: 1px solid black;
+    padding: 0;
+    margin-bottom: 0.3rem;
+}
+.float {
+    float: left;
+}
+.fbox {
+    font-size: 20px;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    position: relative;
+    left: 1.5rem;
+    background-color: #eef5fe;
+    top: 0.1rem;
+}
+.sbox {
+    font-size: 20px;
+    height: 0.7rem;
+    line-height: 0.7rem;
+    position: relative;
+    left: 3.5rem;
+    background-color: #eef5fe;
+    top: 0.1rem;
+
+}
+
+.questions {
+    
+}
+/* 单个问题 Object组件 */
+.question_object {
+    width: 7.5rem;
+    height: 3rem;
+    background-color: #fff;
+    margin: 0.1rem auto;
+}
+.question_title {
+    width: 6.5rem;
+    margin: 0 auto;
+    height: 0.5rem;
+    font-size: 15px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    font-weight: 900;
+    color: #444c57;
+
+}
+.answer_summary {
+    width: 6.5rem;
+    height: 2rem;
+    margin: 0 auto;
+    font-size: 17px;
+    color: #444c57;
+    
+
+}
+.question_bottom{
+    width: 6.5rem;
+    height: 0.5rem;
+    margin: 0 auto;
+    font-size: 13px;
+}
+.like {
+
+}
+
+
+
+#xintie,#jingpin{
+    cursor: pointer;
+}
+
+
+.xintie_clicked{
+    border-bottom: 2px solid #28b7a3;
+    color: #28b7a3;
+}
+
+
+
+/* 提问详情页面 */
+
+.detail {
+    width: 7.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.detail_header {
+    width: 7.5rem;
+    height: 0.8rem;
+    background-color: #03abff;
+}
+.back_button {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-image:url(../img/back_button.png);
+    background-repeat:no repeat;
+    background-position: center;
+    background-size: cover;
+}
+.detail_question_title {
+    font-size: 25px;
+    line-height: 1.5rem;
+    height: 1.5rem;
+    width: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    color: #444c57;
+
+
+}
+
+.detail_question_content {
+    width: 6.5rem;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #444c57;
+
+}
+.detail_question_footbar {
+    width: 6.5rem;
+    margin: 0 auto;
+}
+.detail_question_createdDate {
+    float: left;
+    margin-top: 0.2rem;
+    font-size: 12px;
+    color: #828993;
+}
+.detail_comment_count {
+    float: right;
+    margin-top: 0.2rem;
+    font-size: 12px;
+    color: #828993;
+
+}
+
+
+.detail_comment {
+    font-size: 20px;
+    font-weight: 900;
+    height: 1rem;
+    line-height: 1rem;
+    width: 6.5rem;
+    margin: 0.2rem auto;
+}
+
+.detail_write_comment {
+    font-size: 15px;
+    float: right;
+    height: 0.6rem;
+    text-align: center;
+    border: 2px solid #28b7a3;
+    line-height: 0.6rem;
+    width: 1.5rem;
+    border-radius: 12%;
+    margin-top: 0.2rem;
+
+}
+
+
+.detail_com {
+    width: 6.5rem;
+    margin: 0.2rem auto;
+}
+.detail_user_img {
+    width: 0.5rem;
+    height: 0.5rem;
+    float: left;
+    background-image:url(../img/user_img.jpg);
+    background-repeat:no repeat;
+    background-position: center;
+    background-size: cover;
+}
+.detail_user_box {
+    width: 4.7rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+.detail_user_name {
+    font-size: 20px;
+    color: #444c57;
+
+}
+.detail_like {
+    background-image:url(../img/like.jpg);
+    background-repeat:no repeat;
+    background-position: center;
+    background-size: cover;
+    height: 0.5rem;
+    width: 0.5rem;
+    float: right;
+}
+.detail_user_content {
+    margin-top: 0.2rem;
+    font-size: 18px;
+    width: 5rem;
+    color: #444c57;
+
+}
+
+
+/* //评论按钮 */
+#com_ask{
+    margin-top: 0.5rem;
+    display: block;
+    float: right;
+    width: 1rem;
+    height: 0.5rem;
+    line-height: 0.6rem;
+    font-size: 14px;
+    background-color: #0084FF;
+}
+
+
+/* 提问详情页面的弹出框 */
+#ask_button{
+    margin-top: 0.5rem;
+    display: block;
+    float: right;
+    width: 1rem;
+    height: 0.5rem;
+    line-height: 0.6rem;
+    font-size: 14px;
+    background-color: #0084FF;
+}
+#ask_form{
+    width: 5rem;
+    margin: 0 auto;
+
+}
+#ques_text{
+    margin-top: 0.3rem;
+    display: block;
+    width: 5rem;
+    border: 0;
+    font-family: inherit;
+    font-size: 18px;
+}
+#con_text{
+    margin-top: 0.3rem;
+    display: block;
+    width: 5rem;
+    border: 0;
+    font-family: inherit;
+    font-size: 18px;
+}
+textarea:focus {
+    outline: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 科室挂号区 */
+.depart {
+    width: 7.5rem;
+    padding-bottom: 1.5rem;
+    background-color: #eef5fe;
+}
+.depart_content{
+
+    
+}
+.depart_title{
+    border-bottom: 1px solid #dcdddd;
+    height: 0.5rem;
+    font-size: 18px;
+    width: 7rem;
+    margin: 0 auto;
+    color:#00B3EA;
+}
+.depart_content_bar{
+    /* border: 1px solid #dcdddd; */
+    width: 7rem;
+    margin: 0.2rem auto;
+
+}
+.depart_content_bar ul{
+    margin: 0;
+    padding: 0;
+}
+.depart_content_bar li{
+    float:left;
+    margin-left: 0.3rem;
+    margin-bottom: 0.1rem;
+    list-style:none;
+    display:block; 
+    white-space: nowrap;
+    font-size: 16px;
+    color:#777;
+}
+.depart_content_bar a:link,.depart_content_bar a:hover,.depart_content_bar a:visited,.depart_content_bar a:active{
+    color:#777;
+}
+.depart .top_bar {
+    width: 7.5rem;
+    height: 1.2rem;
+    font-size: 25px;
+    line-height: 1.2rem;
+    border: 1px solid #dcdddd;
+    margin-bottom: 0.2rem;
+}
+.depart .left_bar {
+    float: left;
+    width: 2rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    border: 1px solid #dcdddd;
+}
+.depart .right_bar {
+    float: left;
+    width: 4.5rem;
+    margin-top: 0.3rem;
+    margin-left: 0.3rem;
+    border: 1px solid #dcdddd;
+}
+.left_bar ul{
+
+}
+.left_bar li {
+    
+}
+
+
+
+
+
+
+
+
+/* 挂号 */
+.register {
+    width: 7.5rem;
+    padding-bottom: 1.5rem;
+}
+/* .Monday, .Tuesday, .Wednesday, .Thursday, .Friday, .Saturday, .Sunday{
+    float: left;
+    width: 1rem;
+}
+.Monday li, .Tuesday li, .Wednesday li, .Thursday li, .Friday li, .Saturday li, .Sunday li{
+    font-size: 15px;
+    height: 1rem;
+    margin-top: 0.5rem;
+} */
+.weekday{
+    float: left;
+    width: 1.2rem;
+}
+.weekday_title{
+    font-size: 10px;
+    width: 1.2rem;
+    height: 0.8rem;
+    /* line-height: 0.8rem; */
+    text-align: center;
+    border: 1px solid #e5e5e5;
+
+}
+.weekday_title p{
+    margin: 0;
+}
+.weekday li{
+    font-size: 15px;
+    height: 1rem;
+    border: 1px solid #e5e5e5;
+    line-height: 1rem;
+    text-align: center;
+}
+.time_table {
+    width: 7.5rem;
+}
+.time_table ul{
+    padding: 0;
+    margin: 0;
+}
+.left_button{
+    background-image: url(../img/left_button.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 0.7rem;
+    height: 0.8rem;
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+
+}
+.right_button{
+    background-image: url(../img/right_button.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 0.7rem;
+    height: 0.8rem;
+    cursor: pointer;
+    border: 1px solid #e5e5e5;
+
+
+}
+
+.l_table {
+    width: 0.7rem;
+    float: left;
+}
+.l_table li {
+    font-size: 15px;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    border: 1px solid #e5e5e5;
+
+}
+
+.question_object a {
+    text-decoration: none;
+}
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
+    color: #000;
+}
+.m_table {
+    width: 6.1rem;
+    float: left;
+    
+}
+.m_table th{
+    font-size: 15px;
+    height: 0.8rem;
+}
+.m_table td{
+    font-size: 15px;
+    padding-top: 0.25rem;
+    height: 1rem;
+}
+
+.r_table {
+    width: 0.7rem;
+    float: left;
+    background-color:#f2f8ff;
+}
+
+.r_table li {
+    font-size: 15px;
+    height: 1rem;
+    background-color:#f2f8ff;
+} 
+
+.register_click {
+    background: #4ab4ed;
+    color: #fff;
+}
+.register_doctor_list{
+    width: 7.5rem;
+}
+.register_doctor_list_bar{
+    width: 7.5rem;
+    margin-top: 0.1rem;
+}
+.register_doctor_list_bar_one{
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-image: url(../img/female_doctor.png);
+    background-position: center;
+    background-size: cover;
+    border: 1px solid #e5e5e5;
+}
+.register_doctor_list_bar_two{
+    float: left;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 14px;
+    line-height: 1.5rem;
+    text-align: center;
+}
+.register_doctor_list_bar_three{
+
+    float: left;
+    width: 2.5rem;
+    height: 1.5rem;
+    font-size: 14px;
+    padding-top: 0.3rem;
+}
+.register_doctor_list_bar_three span{
+    display: block;
+    color: #868686;
+    padding-bottom: 12px;
+    height: 0.3rem;
+    padding-bottom: 0.2rem;
+}
+
+.register_doctor_list_bar_four{
+
+    float: left;
+    width: 1.8rem;
+    height: 1.2rem;
+    font-size: 14px;
+    padding-top: 0.3rem;
+
+}
+.register_doctor_list_bar_four a{
+    background-color: #4ab4ed;
+    color: #fff;
+    cursor: pointer;
+    width: 1.5rem;
+    text-align: center;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0 auto;
+    display: block;
+}
+
+.doctor_guidance {
+    margin-top: 0.2rem;
+    width: 7rem;
+
+}
+.guidance_one {
+    width: 7rem;
+    border-bottom: 1px solid #eeeeee;
+}
+.guidance_one ul {
+    margin: 0;
+    padding: 0;
+}
+.guidance_one li {
+    
+    font-size: 12px;
+    color: #888;
+}
+.guidance_one span {
+    color: #333;
+    font-size:12px;
+}
+.guidance_two {
+    width: 7rem;
+}
+.guidance_two p{
+    color: #888;
+    font-size: 12px;
+}
+.guidance_title{
+    font-size: 15px;
+    font-weight: normal;
+    color: #606060;
+    margin-bottom: 0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* front页面 */
+
+.front{
+    width: 7.5rem;
+    padding-bottom: 1.5rem;
+    height: 11.83rem;
+    background-image: url(../img/login_bgc.jpg);
+    background-position: 0 0 ;
+    background-size: cover;
+
+}
+.front_title {
+    /* background-image: url(../img/title_logo.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 1rem;
+    position: relative;
+    top: 1.2rem;
+    left: 1.5rem; */
+}
+.front_window {
+    position: relative;
+    top: 1.5rem;
+    left: 0.55rem;
+    width: 6.23rem;
+    height: 8.07rem;
+    background-color: #fff;
+    border-radius: 10%;
+    font-size: 20px;
+
+}
+/* 最开始的首页弹出的样式跟上面作区分 */
+.first_front_window {
+    position: relative;
+    top: 2.5rem;
+    left: 0.65rem;
+    width: 6.23rem;
+    height: 8.07rem;
+    background-color: #fff;
+    border-radius: 10%;
+    font-size: 20px;
+
+}
+
+
+.front_window_title {
+    width: 5.23rem;
+    height: 1rem;
+    /* margin: 0 auto; */
+    font-size: 20px;
+    color: #b8b8b8;
+    position: relative;
+    top: 0.5rem;
+    left: 0.5rem;
+
+}
+
+.my_logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    top: 0.5rem;
+    left: 2.2rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: url(../img/chris.jpg);
+    background-position: 0 0 ;
+    background-size: cover;
+}
+.my_name {
+    font-size: 20px;
+    width: 4rem;
+    margin-top: 0.1rem;
+    position: relative;
+    top: 1.3rem;
+    left: 1.5rem;
+
+}
+
+.my_number {
+    font-size: 20px;
+    width: 4rem;
+
+    margin-top: 0.5rem;
+    position: relative;
+    top: 1.5rem;
+    left: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 登录 注册 */
+.login , .reg{
+    width: 7.5rem;
+    padding-bottom: 1.5rem;
+    height: 11.83rem;
+    background-image: url(../img/login_bgc.jpg);
+    background-position: 0 0 ;
+    background-size: cover;
+
+}
+.login_title {
+    background-image: url(../img/title_logo.png);
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    width: 6rem;
+    height: 1rem;
+    position: relative;
+    top: 1.2rem;
+    left: 1.5rem;
+}
+.login_window {
+    position: relative;
+    top: 1.5rem;
+    left: 0.55rem;
+    width: 6.23rem;
+    height: 8.07rem;
+    background-color: #fff;
+    border-radius: 10%;
+    font-size: 20px;
+
+}
+.login_window form {
+    position: relative;
+    top: 1rem;
+    left: 0.7rem;
+    font-size: 15px;
+}
+.login_window form span{
+    display: block;
+    font-size: 10px;
+    color: #b9c4d1;
+    margin-bottom: 0.2rem;
+}
+.uinput{
+    display: block;
+    font-size: 15px;
+    background-color: #f1f5f9;
+    outline: none;
+    border:0px;
+    height: 0.7rem;
+    width: 4.5rem;
+    border-radius: 2%;
+    margin-bottom: 0.5rem;
+
+}
+.login_window button{
+    width: 3.5rem;
+    margin-left: 0.5rem;
+    height: 0.7rem;
+    background-color: #00baef;
+    color: #fff;
+    border: 0;
+    border-radius: 5%;
+}
+.check_box {
+    margin-top: 0.5rem;
+}
+.check_box input{
+    width: 0.2rem;
+    height: 0.2rem;
+    float: left;
+}
+.check_box span {
+    float: left;
+}
+.forget {
+    margin-left: 1.7rem;
+
+    font-size: 10px;
+    color: #b9c4d1;
+    margin-top: 0.2rem;
+}
+.login_window_title {
+    width: 2rem;
+    height: 1rem;
+    margin: 0;
+    font-size: 25px;
+    color: #b8b8b8;
+    position: relative;
+    top: 0.5rem;
+    left: 2.5rem;
+
+}
+.login_route {
+    color: #bbb9f8;
+    width: 2rem;
+    
+    font-size: 10px;
+    position: relative;
+    top: 1.6rem;
+    left: 2.5rem;
+}
+.reg>.login_route {
+    color: #bbb9f8;
+    font-size: 10px;
+    position: relative;
+    top: 1.6rem;
+    left: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* mine */
+.mine {
+    width: 7.5rem;
+    padding-bottom: 1.5rem;
+    height: 11.7rem;
+}
+
+.mine_header {
+    background-image: url(../img/mine_header.jpg);
+    background-position: 0 0 ;
+    background-size: cover;
+    width: 7.5rem;
+    height: 5rem;
+}
+
+.header_image {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #fff;
+    background-image: url(../img/chris.jpg);
+    background-position: 0 0 ;
+    background-size: cover;
+    position: relative;
+    top: 1.2rem;
+    margin: 0 auto;
+}
+.header_name {
+    width: 2rem;
+    margin: 0 auto;
+    height: 0.8rem;
+    position: relative;
+    top: 1.3rem;
+    line-height: 0.8rem;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.mine_header_after {
+    background-color: #eef5fe;
+    width: 7.5rem;
+    height:  6.8rem;
+}
+
+.button_collection {
+    width: 6.8rem;
+    height: 6.94rem;
+    background-color: #fff;
+    z-index: 5;
+    position: relative;
+    top:-7.5rem;
+    border-radius: 5%;
+    left: 0.4rem;
+}
+.mine_side_bar {
+    height: 0.8rem;
+    width: 6rem;
+    margin: 0 auto;
+    border-bottom: 1px dashed #000;
+    font-size: 15px;
+    line-height: 0.8rem;
+}
+.mine_side_bar_wu {
+    height: 0.8rem;
+    width: 6rem;
+    margin: 0 auto;
+    color: #444c57;
+    border-bottom: 1px dashed #000;
+    font-size: 15px;
+    line-height: 0.8rem;
+}
+
+.ty_button {
+    background-color: #4ab4ed;
+    color: #fff;
+    cursor: pointer;
+    width: 1.5rem;
+    text-align: center;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    margin: 0 auto;
+    outline: none;
+}
+
+
+
+
+/* 白板 */
+.blank {
+    width: 7.5rem;
+    padding-bottom: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* 固定底栏 */
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 1.5rem;
+    width: 7.5rem;
+    background-color: #fff;
+    border-top:1px solid #d5d7dc;
+    z-index: 999;
+}
+
+.footer_icon {
+    width: 1.375rem;
+    height: 1.375rem;
+    margin:0.06rem 0.25rem;
+    float: left;
+    background-position: center;
+    background-size: cover;
+}
+.footer_icon_1 {
+    background-image: url(../img/footer_icon_1.jpg);  
+}
+.footer_icon_1_blue {
+    background-image: url(../img/footer_icon_1_blue.jpg);
+}
+.footer_icon_2 {
+    background-image: url(../img/footer_icon_2.jpg);
+}
+.footer_icon_2_blue {
+    background-image: url(../img/footer_icon_2_blue.jpg);
+}
+.footer_icon_3 {
+    background-image: url(../img/footer_icon_3.jpg);
+}
+.footer_icon_3_blue {
+    background-image: url(../img/footer_icon_3_blue.jpg);
+}
+.footer_icon_4 {
+    background-image: url(../img/footer_icon_4.jpg);
+}
+.footer_icon_4_blue {
+    background-image: url(../img/footer_icon_4_blue.jpg);
+}

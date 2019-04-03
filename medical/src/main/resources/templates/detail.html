@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>移动医疗挂号平台</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../static/css/detail.css">
+
+    <link rel="stylesheet" href="../dist/css/swiper.min.css">
+    <link rel="stylesheet" href="../static/dist/css/swiper.min.css">
+    
+    <script src="../dist/js/swiper.min.js"></script>
+    <script src="../static/dist/js/swiper.min.js"></script>
+    
+    <script src="../jquery/jquery-1.11.3.min.js"></script>
+    <script src="../static/jquery/jquery-1.11.3.min.js"></script>
+    
+    <script src="../static/layer/layer.js"></script>
+    <script src="../layer/layer.js"></script>
+
+
+    <script src="../static/js/main.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 7.5 + 'px';
+    </script>
+
+
+
+
+</head>
+<body>
+    <div class="detail">
+        <div class="detail_header">
+            <div class="back_button"></div>
+        </div>
+        <!-- <div>question.id:$!{question.id}</div> -->
+        <div class="question_title">$!{question.title}</div>
+        <div class="question_content">$!{question.content}</div>
+        <div class="question_footbar clearfix">
+            <div class="question_createdDate">$!{question.createdDate}</div>
+            <div class="comment_count">$!{question.commentCount}</div>
+        </div>
+        <!-- <div>question.userId:$!{question.userId}</div> -->
+
+        <div class="comment">精选评论:
+            <div class="write_comment">写留言</div>
+        </div>
+
+    #foreach($comment in $comments)
+    <div class="com clearfix">
+        <div class="user_img"></div>
+        <div class="user_box">
+            <div class="user_name clearfix">$comment.comment.userId
+                <div class="like"></div>
+            </div>
+            <div class="user_content">$comment.comment.content</div>
+        </div>
+        <!-- <div>$comment.comment.id</div> -->
+        <!-- <div>$comment.comment.createdDate</div> -->
+        <!-- <div>$comment.comment.status</div> -->
+    </div>
+         
+    #end
+    </div>
+        
+
+
+    <div class="footer">
+            <div class="footer_icon footer_icon_1"></div>
+            <div class="footer_icon footer_icon_2"></div>
+            <div class="footer_icon footer_icon_3"></div>
+            <div class="footer_icon footer_icon_4"></div>   
+        </div>
+</body>
+</html>
+
+<!-- 360*640 -->
